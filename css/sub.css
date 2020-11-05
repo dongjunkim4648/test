@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans&display=swap');
+
+
+/*초기화 요소*/
+* {margin: 0; padding: 0;}
+ol, ul {list-style: none;}
+
+a:link,a:visited,a:active,a:hover{text-decoration: none;color: 000;}
+
+input {vertical-align: middle;}
+
+body{font-family:font-family: 'Open Sans','Noto Sans KR', serif;
+ font-size: 16px; line-height: 26px; color: #000;}
+
+#img{position: relative;background: #000;}
+#img img{width: 1100px;margin:0px 400px;}
+#img p{position: absolute; top: 135px; left: 800px; font-size: 22px; }
+#img a{color: #ccc;display: inline-block; border: solid 1px #ccc;padding: 5px 15px;}
+#img a:hover{background:#000; color: #fff;}
+
+#img1{position: relative; background: #c76e02;}
+#img1 img{width: 1100px;margin:0px 400px;}
+#img1 p{position: absolute; top: 535px; left: 770px; font-size: 20px; }
+#img1 a{color: #000;display: inline-block; border: solid 0px ;padding: 5px 15px;background: #f5ff8f;border-radius: 50px;}
+#img1 a:hover{background:#fda740; color: #fff;}
+
+#img3{position: relative; background: #83baff;}
+#img3 img{width: 1100px;margin:0px 400px;}
+#img3 p{position: absolute; top: 535px; left: 770px; font-size: 20px; }

@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+	/*초기화 요소*/
+	*{margin: 0; padding: 0;}
+ol, ul{list-style: none;}
+a:link,a:visited,a:active,a:hover{text-decoration: none;color: 000;}
+
+body { font-family: 'Josefin Sans', sans-serif; font-size:16px; line-height:26px; color:#000; overflow-x:hidden; min-width:1400px; }
+
+
+
+input {vertical-align: middle;}
+
+
+#header{height: 200px; border-bottom: 1px  solid #eee;width: 100%; }
+#header .header_inner{width: 1200px; margin: 0 auto; position: relative}
+#header h1{position: absolute;top: 50px;}
+
+
+/*1차메뉴*/
+.all_gnb{position: absolute;top: 100px; right: 0;z-index: 999999}
+.all_gnb > li{float: left;}
+
+.all_gnb > li > a{font-weight: bold;font-size: 25px; display: block; padding: 10px 60px 10px;color: #000;}
+
+
+.dp2_bg { width: 100%; background: #FFF; height: 150px; position: absolute; left: 0; top: 200px; z-index: 999; }
+
+/*2차메뉴*/
+
+.all_dp2 { padding-top: 15px; height: 150px;box-sizing: border-box;z-index: 9}
+.all_dp2 > li > a{display: block; text-align: left; color: #000; font-size: 16px;padding-top: 10px; text-align: center;}
+.all_dp2 > li > a:hover{color: #003B6C}
+
+
+
+/*우측상단 아이콘*/
+.member{position: absolute; right: 0px;top: 30px;}
+.member li{float: left; padding-right: 50px;transition: 0.5s}
+.member li:hover{transform: translateY(-5px);}
+
+
+
+
+/*이벤트 페이지*/
+
+#banner {width: 1106px; margin: 0 auto;}
+#banner ul li{ width: 1106px; height: 339px; overflow: hidden; margin: 60px 0px;}
+
+#banner ul li img:hover {transform: scale(1.1,1.1);}
+#banner ul li img{transition:transform 0.5s}
+#banner ul{padding-bottom: 100px;}
+#banner .event_title{text-align: center;padding-top: 100px;font-size: 60px;}
+
+
+#gotop{position: fixed;right: 30px; bottom: 30px;}
+
+
+
+
+/*남성,여성페이지*/
+
+#man_main_banner{width: 1920px;margin: 0 auto}
+#top_pants{width: 1200px;height: 200px; margin: 0 auto;}
+#top_pants p{float: left; margin: 50px; font-size: 25px; color: #000; transition: transform 0.5s; position: relative; left: 400px;}
+#top_pants p:hover{transform: translateY(-20px);}
+#top_pants p a{color: #000;}
+#top_pants p a:hover{color: #003B6C; }
+#top_pants p::after{clear: both;display: none; content: "";}
+
+
+
+
+/*best photo*/
+
+#best_photo{width: 1200px; margin: 0 auto; padding-bottom: 100px;}
+#best_photo .best_txt{font-size: 70px; font-weight: bold;padding-bottom: 80px;padding-top: 50px;}
+#best_photo ul::after{content: ""; clear: both;display: block;}
+#best_photo li{float: left;padding: 0px 85px;overflow: hidden}
+
+#best_photo li img{transition: transform 0.5s}
+#best_photo li img:hover{transform: scale(1.2,1.2);}
+
+
+
+
+
+#products{width: 1200px; margin: 0 auto;position: relative}
+#products .title_top{font-size: 70px; padding-bottom: 80px;}
+
+#products .products_list::after{content: "";clear: both;display: block;}
+
+#products .products_list li{float: left; margin-bottom: 100px; margin: 40px 50px;}
+
+#products .products_list li img{transition: transform 0.5s}
+#products .products_list li img:hover{transform:scale(1.2,1.2);}
+
+#products .product_list li:nth-child(5){margin-right: 0;}
+#products .product_list li:nth-child(10){margin-right: 0;}
+
+.product_name{font-weight: bold;font-size: 20px;padding: 20px 0px 0px;}
+.product_price{font-size:30px;font-weight: bold  }
+.product_size{font-size: 20pxfont-weight: bold }
+#products .plus_botton{position: absolute; right: 100px; top: -20px; transition: transform 0.5s }
+#products .plus_botton:hover{transform: translateY(-10px)}
+
+
+
+#anoter_products{width: 1200px; margin: 100px auto 0; padding-bottom: 150px;position: relative;}
+#anoter_products .title_top{font-size: 70px; padding-bottom: 80px;}
+
+#anoter_products .anoter_products_list::after{content: "";clear: both;display: block;}
+
+#anoter_products .anoter_products_list li{float: left; margin-bottom: 100px; margin: 40px 50px;  }
+#anoter_products .anoter_products_list li img:hover{transform: scale(1.2,1.2)}
+#anoter_products .anoter_products_list li img{transition: transform 0.5s}
+
+
+
+
+#anoter_products .anoter_product_list li:nth-child(5){margin-right: 0;}
+#anoter_products .anoter_product_list li:nth-child(10){margin-right: 0;}
+
+.anoter_product_name{font-weight: bold;font-size: 20px; padding: 20px 0px 0px;}
+.anoter_product_price{font-size:30px;font-weight: bold  }
+.anoter_product_size{font-size: 20pxfont-weight: bold }
+#anoter_products .plus_botton{position: absolute; right: 100px; top: 20px;transition: transform 0.5s}
+
+#anoter_products .plus_botton:hover{transform: translateY(-20px)}
+
+
+
+/*악세사리*/
+#products_accessories{width: 1200px; margin: 0 auto;position: relative; padding-bottom: 300px;}
+#products_accessories .title_top{font-size: 70px; padding-bottom: 80px;}
+
+#products_accessories .products_list::after{content: "";clear: both;display: block;}
+
+#products_accessories .products_list li{float: left; margin: 40px 50px;}
+
+#products_accessories .products_list li img{transition: transform 0.5s}
+#products_accessories .products_list li img:hover{transform:scale(1.2,1.2);}
+
+#products_accessories .products_list li:nth-child(5){margin-right: 0;}
+#products_accessories .products_list li:nth-child(10){margin-right: 0;}
+
+.product_name{font-weight: bold;font-size: 20px;padding: 20px 0px 0px;}
+.product_price{font-size:30px;font-weight: bold  }
+.product_size{font-size: 20pxfont-weight: bold }
+#products_accessories .plus_botton{position: absolute; right: 100px; top: 0px; transition: transform 0.5s }
+#products_accessories .plus_botton:hover{transform: translateY(-20px)}
+
+
+
+
+
+
+
+
+/*역사*/
+
+#history_banner{width: 1920px;;margin: 0 auto;}
+
+#brand{width: 1200px;margin: 0 auto;}
+#brand h1{text-align: center;font-size: 50px;padding: 200px 0px; 200px;}
+#brand figure {width: 420px; float: left;}
+#brand figcaption{width: 700px; float: right;}
+#brand h3{font-size: 30px; padding-bottom: 10px;font-weight: bold;margin-left: 100px;margin-bottom: 60px;margin-top: 30px;}
+#brand p{padding-bottom: 30px;font-size: 18px;margin-left: 100px; margin-top: 10px;}
+
+
+#location{width: 1200px; margin: 0 auto;position: relative}
+#location h2{padding-top: 1000px;font-size: 50px; text-align: center; padding-bottom: 50px;}
+#location iframe{padding-bottom: 200px;}
+#location .plus{position: absolute; right: 0px; bottom: 700px; transition: transform 0.5s }
+#location .plus:hover{transform:rotate(180deg);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*위치*/
+
+#location_banner{width: 1920px; margin: 0 auto;}
+#img_txtbox{width: 1200px;margin: 0 auto; }
+#img_txtbox .titletxt{font-size: 50px; text-align: center; padding: 200px 0px 150px; font-weight: bold}
+#img_txtbox .imgbox{float: left;}
+
+
+
+#img_txtbox iframe{width: 1200px; height: 300px; padding-bottom: 200px;}
+
+#img_txtbox .txtbox {background: #003B6C; height: 350px; padding: 80px; box-sizing: border-box; float: right; width: 553px; text-shadow: 5px 5px 5px rgba(0,0,0,0.9);}
+#img_txtbox .title{font-size: 50px; color: #fff; font-weight: bold;padding-bottom:30px;}
+.loc{color: #fff; padding: 10px 0 5px; opacity:0.7;}
+.num{color: #fff; padding: 5px 0; opacity:0.7;}
+.time{color: #fff; padding: 5px 0; opacity:0.7;}
+
+
+
+/*하단 로고 및 텍스트*/
+
+
+#footer{border-top: 1px solid #eee;width: 100%; }
+.footer_sns{width: 1200px;; margin: 0 auto; position: relative; height: 500px;}
+.footer_h2{font-size: 35px;padding-top: 100px;font-weight: bold;}
+.footer_sns p{padding-top: 50px; font-size: 20px; font-weight: 100}
+.footer_sns .sns{ position: absolute; right: 0; top: 100px;}
+.footer_sns .sns li{float: right; padding: 30px 10px;}
+
+
+
+#footer .txt_1{position: absolute; top: 280px;}
+#footer .txt_1::after { content: ""; clear: both; display: block;}
+#footer .txt_1 li{float: left; font-size: 12px;padding-right: 20px;}
+#footer .txt_1 li a{color: #000;}
+
+#footer .txt_2{position: absolute;top: 310px;}
+#footer .txt_2 li{float: left; font-size: 12px;padding-right: 20px;}
+#footer .txt_2 li a{color: #000;}
+
+#footer .txt_3{position: absolute;top: 340px; }
+#footer .txt_3 li{float: left; font-size: 12px;}
+#footer .txt_3 li a{color: #000;}
+
+#footer .last_txt1{position: absolute; top: 380px;}
+#footer .last_txt1 a{color: #000;font-size: 14px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

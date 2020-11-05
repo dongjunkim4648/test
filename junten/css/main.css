@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+	/*초기화 요소*/
+	*{margin: 0; padding: 0;}
+ol, ul{list-style: none;}
+a:link,a:visited,a:active,a:hover{text-decoration: none;color: 000;}
+
+body { font-family: 'Josefin Sans', sans-serif; font-size:16px; line-height:26px; color:#000; overflow-x:hidden; min-width:1400px; }
+
+
+
+input {vertical-align: middle;}
+
+
+#header{height: 200px;}
+#header .header_inner{width: 1200px; margin: 0 auto; position: relative}
+#header h1{position: absolute;top: 50px;}
+
+
+/*1차메뉴*/
+.all_gnb{position: absolute;top: 100px; right: 0;z-index: 999999}
+.all_gnb > li{float: left;}
+
+.all_gnb > li > a{font-weight: bold;font-size: 25px; display: block; padding: 10px 60px 10px;color: #000;}
+
+
+.dp2_bg { width: 100%; background: #FFF; height: 150px; position: absolute; left: 0; top: 200px; z-index: 999; }
+
+/*2차메뉴*/
+
+.all_dp2 { padding-top: 15px; height: 150px;box-sizing: border-box;}
+.all_dp2 > li > a{display: block; text-align: left; color: #000; font-size: 16px;padding-top: 10px; text-align: center;}
+.all_dp2 > li > a:hover{color: #003B6C}
+
+
+
+/*우측상단 아이콘*/
+.member{position: absolute; right: 0px;top: 30px;}
+.member li{float: left; padding-right: 50px;transition: 0.5s}
+.member li:hover{transform: translateY(-5px);}
+
+
+
+/*메인 비주얼*/
+#main_visual{height: 758px; position: relative;}
+#main_visual li{height: 758px;box-sizing: border-box;}
+#main_visual .mv1{background: url('../images/main/main_banner1.jpg')no-repeat center top;}
+#main_visual .mv2{background: url('../images/main/main_banner2.jpg')no-repeat center top;}
+#main_visual .mv3{background: url('../images/main/main_banner3.jpg')no-repeat center top;}
+
+
+/* PAGER */
+
+#main_visual .bx-wrapper .bx-pager {position: absolute; left: 50%;transform: translateX(-50%); bottom:20px; z-index: 999999; text-align: center;font-size: .85em;font-family: Arial;font-weight: bold;color: #ccc;padding-top: 20px;}
+
+#main_visual .bx-wrapper .bx-pager .bx-pager-item,
+#main_visual .bx-wrapper .bx-controls-auto .bx-controls-auto-item {display: inline-block;*zoom: 1;*display: inline;}
+
+#main_visual .bx-wrapper .bx-pager.bx-default-pager a {background: #fff;text-indent: -9999px;display: block;	width: 10px;height: 10px;margin: 0 5px;	outline: 0;	-moz-border-radius: 5px;-webkit-border-radius: 5px;	border-radius: 5px;}
+
+#main_visual .bx-wrapper .bx-pager.bx-default-pager a:hover,
+#main_visual .bx-wrapper .bx-pager.bx-default-pager a.active {background: #8AFFFF; width: 30px;}
+
+
+
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+#main_visual .bx-wrapper .bx-prev {left: 10%; background: url('../images/main/mv_prev.png') no-repeat center center;}
+#main_visual .bx-wrapper .bx-next {right: 10%;	background: url('../images/main/mv_next.png') no-repeat center center }
+#main_visual .bx-wrapper .bx-controls-direction a {position: absolute;top: 50%;	margin-top: -16px;outline: 0;width: 42px;height: 80px;border-radius: 50%; text-indent: -9999px;z-index: 9999;}
+#main_visual .bx-wrapper .bx-controls-direction a.disabled {	display: none;}
+
+
+
+/*베스트상품*/
+
+#products {width: 1200px; margin: 0 auto; padding-top: 250px;}
+#products h2 {font-size: 55px;padding-bottom: 70px;text-align: center}
+#products .product_list{padding-left: 75px;}
+#products .product_list::after{content: ""; clear: both;display: block;}
+#products .product_list li{float: left; width: calc((100% - 30px)/4); margin-bottom: 50px; transition: transform 0.5s;}
+#products .product_list li:last-child{margin-right: 0;}
+#products .product_list li:hover{transform: translateY(-20px);}
+#products .product_name{font-size: 15px; padding-top: 15px;}
+#products .product_price{font-size: 30px;}
+
+
+
+/*샵부분*/
+
+#shop{width: 1200px; margin: 0 auto;padding-top: 250px;text-align: center}
+#shop::after{content: "";clear: both; display: block;}
+#shop .shop_h2 {font-size: 55px; padding-bottom: 70px;}
+
+
+.man{float: left; position: relative; }
+.man:hover .overbox{opacity: 1;}
+
+.woman{float: right; position: relative }
+.woman:hover .overbox{opacity: 1; }
+
+.acsires{ clear: both; position: relative; padding-top: 70px;}
+.acsires:hover .overbox{opacity: 1;}
+
+.overbox{position: absolute; left: 0; bottom: 0; opacity: 0; transition: opacity 0.5s;}
+
+
+
+
+
+
+
+/*베스트포토*/
+
+#photo{width: 1200px; margin: 250px auto 0;padding-bottom: 250px; position: relative; text-align: center}
+#photo h2{font-size: 55px;padding-bottom: 70px;}
+#photo .photo_list::after{content: "";clear: both; display: block;}
+#photo .photo_list li{float: left; padding: 15px; }
+#photo .photo_list li:hover{opacity: 0.7}
+
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+#photo .bx-wrapper .bx-prev {left: 50px; background: url('../images/main/mv_prev.png') no-repeat center center;}
+#photo .bx-wrapper .bx-next {right: 50px;	background: url('../images/main/mv_next.png') no-repeat center center }
+#photo .bx-wrapper .bx-controls-direction a {position: absolute;top: 0;margin-top: 50px;	width: 42px;height: 40px;border-radius: 50%; text-indent: -9999px;z-index: 9999; }
+.photo_list .bx-wrapper .bx-controls-direction a.disabled {display: none;}
+
+#gotop{position: fixed;right: 30px; bottom: 30px;}
+
+
+
+/*하단 로고 및 텍스트*/
+
+
+#footer{border-top: 1px solid #eee;width: 100%; }
+.footer_sns{width: 1200px;; margin: 0 auto; position: relative; height: 500px;}
+.footer_h2{font-size: 35px;padding-top: 100px;font-weight: bold;}
+.footer_sns p{padding-top: 50px; font-size: 20px; font-weight: 100}
+.footer_sns .sns{ position: absolute; right: 0; top: 100px;}
+.footer_sns .sns li{float: right; padding: 30px 10px;}
+
+
+
+#footer .txt_1{position: absolute; top: 280px;}
+#footer .txt_1::after { content: ""; clear: both; display: block;}
+#footer .txt_1 li{float: left; font-size: 12px;padding-right: 20px;}
+#footer .txt_1 li a{color: #000;}
+
+#footer .txt_2{position: absolute;top: 310px;}
+#footer .txt_2 li{float: left; font-size: 12px;padding-right: 20px;}
+#footer .txt_2 li a{color: #000;}
+
+#footer .txt_3{position: absolute;top: 340px; }
+#footer .txt_3 li{float: left; font-size: 12px;}
+#footer .txt_3 li a{color: #000;}
+
+#footer .last_txt1{position: absolute; top: 380px;}
+#footer .last_txt1 a{color: #000;font-size: 14px;}
+
+
+
+
+
+
